@@ -120,8 +120,8 @@ ul li a {
     width: 100%;
     position: absolute;
     left: 0;
-    background-color: hwb(55deg 35% 18% / 51%);
-    top: 20px;
+    background-color: hwb(55deg 35% 18% / 80%);
+    top: 40px;
     transition: 0.9s linear;
 }
 li:hover {
@@ -266,14 +266,16 @@ li:hover {
 
 .content h3 , .more {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    text-align: center;
 }
 .content h3 {
     font-size: 30px;
 }
 .content  p {
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.7;
+    
 }
 
 .more a {
@@ -319,6 +321,12 @@ h3.flex-start {
     .image-1 img {
         width: 95%;
     }
+    .content h3 ,.more  {
+        justify-content: center;
+    }
+    /* .content .more {
+        justify-content: center;
+    } */
 
   }
 /* End Content Of Page */
@@ -339,6 +347,7 @@ h3.flex-start {
 }
 .photo {
     position: relative;
+    margin-bottom: 20px;
 }
     
 .photo img{
@@ -390,9 +399,7 @@ h3.flex-start {
 .info h2 {
     color: #fdd31d;
     font-weight: 700;
-}
-.info p {
-    font-weight: 600;
+
 }
 .circle {
     display: flex;
@@ -401,6 +408,22 @@ h3.flex-start {
     position: absolute;
     bottom: -30px;
 }
+@media (max-width: 767px) {
+    .info h2 {
+      text-align: center;
+    }
+    .info p {
+        text-align: center;
+    }
+    .circle {
+        justify-content: center;
+    }
+  }
+.info p {
+    font-weight:500;
+    text-align: center;
+}
+
 
 
 .circle span {
@@ -458,7 +481,7 @@ input {
       text-align: center;
     }
     .row {
-        width: 125%;
+        width: 100%;
     }
   }
   /* End Section Form */
@@ -466,6 +489,7 @@ input {
   .footer {
       background-color: #363636;
       margin-top: 80px;
+     
   }
   .footer .container {
       display: flex;
