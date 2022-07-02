@@ -124,12 +124,6 @@ ul li a {
     top: 40px;
     transition: 0.9s linear;
 }
-li:hover {
-    border-bottom: 1px solid black;
-  
-}
-
-
 
 @media (max-width: 767px) {
     .nav ul {
